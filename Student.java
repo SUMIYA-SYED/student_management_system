@@ -7,8 +7,7 @@ public class Student{
     int marks;
     String grade;
 
-    public void studentdata(){
-    Scanner sc= new Scanner(System.in);
+    public void input(Scanner sc){
 
     System.out.println("Enter Student Id: ");
     id= sc.nextInt(); sc.nextLine();
@@ -19,11 +18,9 @@ public class Student{
     System.out.println("Enter Student Marks: ");
     marks= sc.nextInt(); sc.nextLine();
 
-    sc.close();
-
     }
 
-    public void calculategrade(){
+    public void calculateGrade(){
         if(marks>=90){
             grade = "A";
         }else if(marks>=75){
@@ -40,12 +37,5 @@ public class Student{
         System.out.println("Student Name: "+name);
         System.out.println("Student Marks: "+marks);
         System.out.println("Student Grade: "+grade);
-    }
-    
-public static void main(String[] args){
-    Student ob= new Student();
-    ob.studentdata();
-    ob.calculategrade(); 
-    ob.display();  
     }
 }
