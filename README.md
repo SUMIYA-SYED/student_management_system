@@ -26,3 +26,4 @@ A simple Java application to manage student records using object-oriented progra
 1. Open terminal or command prompt
 2. Compile the files:
 3. Run the files:
+4. 
